@@ -3,7 +3,8 @@ var canvas = document.getElementById("canvas");
 		var ctx = canvas.getContext("2d");
 
 		// cores
-		var corCinza = "#c7c7c7";
+		var corAsfalto = "#363636";
+		var corCinza = "#808080"
 		var corAzul = "#0074d9";
 		var corVerde = "#2ecc71";
 		var corAmarelo = "#f1c40f";
@@ -12,6 +13,14 @@ var canvas = document.getElementById("canvas");
 		var corNuvem = "#ffffff";
 		var corVermelho = "#e74c3c";
 
+		// Imagem godzilla
+		let imagem = new Image()
+		imagem.src = 'img/god.png'
+		imagem.addEventListener('load' ,()=>
+		{
+			e.drawImage(imagem,300,300)
+		})
+	
 		// ceu
 		ctx.fillStyle = corCeu;
 		ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -38,32 +47,32 @@ var canvas = document.getElementById("canvas");
 		ctx.fill();
 
 		// rua
-		ctx.fillStyle = corCinza;
-		ctx.fillRect(0, 350, canvas.width, 50);
+		ctx.fillStyle = corAsfalto;
+		ctx.fillRect(0, 500, canvas.width, 100);
 
 		// predio 1
 		ctx.fillStyle = corCinza;
-		ctx.fillRect(50, 150, 100, 200);
+		ctx.fillRect(50, 300, 100, 200);
 
 		// janela predio 1
 		ctx.fillStyle = corAzul;
-		ctx.fillRect(60, 170, 40, 40);
+		ctx.fillRect(60, 320, 40, 40);
 
 		// predio 2
 		ctx.fillStyle = corCinza;
-		ctx.fillRect(200, 100, 150, 250);
+		ctx.fillRect(200, 250, 150, 250);
 
 		// porta predio 2
 		ctx.fillStyle = corAzul;
-		ctx.fillRect(250, 250, 50, 100);
+		ctx.fillRect(250, 400, 50, 100);
 
 		// predio 3
 		ctx.fillStyle = corCinza;
-		ctx.fillRect(400, 150, 100, 200);
+		ctx.fillRect(400, 300, 100, 200);
 
-		// predio 3
+		// janela predio 3
 		ctx.fillStyle = corAzul;
-		ctx.fillRect(410, 170, 40, 40);
+		ctx.fillRect(410, 320, 40, 40);
 
 		// Define as dimensoes do carro
 		var largura = 100;
@@ -72,7 +81,7 @@ var canvas = document.getElementById("canvas");
 
 		// Define a posicao do carro
 		var posX = 0;
-		var posY = 350;
+		var posY = 500;
 
 		// Desenha o carro
 		ctx.beginPath();
