@@ -33,4 +33,4 @@ defini as dimensões do carro;
 defini a posição do carro;
 criei o carro utilizando retangulos e circulos;
 
-<img src = "img/god.png"/>
+<img src = "img/image.png"/>
