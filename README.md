@@ -32,3 +32,5 @@ criei os 3 retangulos sendo 1 de tamanho diferente dos outros;
 defini as dimensões do carro;
 defini a posição do carro;
 criei o carro utilizando retangulos e circulos;
+
+<img src = "img/god.png"/>
